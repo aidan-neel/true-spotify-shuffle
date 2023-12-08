@@ -218,14 +218,25 @@ e, Spotify Shuffle Fix, Spotify Shuffle Broken, Spotify Shuffle Broken Fix, Spot
             </h1> 
         </nav>
 
-        <main class="w-full h-full z-10 flex items-center justify-end pt-24 px-24 flex-col">
-            <div class="flex items-center justify-start w-full flex-row">
-                <img src={playbackData?.data.item.album.images[0].url} alt="Album cover" class="w-[32rem] h-[32rem] rounded-2xl shadow-md" />
-                <header class='flex flex-col text-white ml-12 h-[32rem] pb-12 justify-end items-start'>
-                    <h1 class="font-bold text-6xl w-full">
+        <main class="w-full h-full z-10 flex items-center justify-end md:pt-24 px-8 lg:px-24 flex-col">
+            <div class="flex md:items-end md:flex hidden h-full justify-start text-center md:text-left md:justify-start w-full flex-col md:flex-row">
+                <img src={playbackData?.data.item.album.images[0].url} alt="Album cover" class="md:w-[32rem] w-[20rem] sm:w-[24rem] h-[20rem] sm:h-[24rem] md:h-[32rem] rounded-2xl shadow-md" />
+                <header class='flex flex-col text-white mt-2 md:mt-0 md:ml-12 h-[32rem] md:pb-12 md:justify-end md:items-start'>
+                    <h1 class="font-bold text-5xl truncate h-16 xl:h-20 xl:text-6xl w-full">
                         {playbackData?.data.item.name}
                     </h1>
-                    <p class="text-xl text-white/80 mt-4">
+                    <p class="text-xl text-white/80">
+                        {playbackData?.data.item.artists[0].name} &middot; {playbackData?.data.item.album.name}
+                    </p>
+                </header>
+            </div>
+            <div class="md:hidden flex flex-col items-center justify-center text-center absolute">
+                <img src={playbackData?.data.item.album.images[0].url} alt="Album cover" class="md:hidden w-[20rem] sm:w-[24rem] h-[20rem] sm:h-[24rem] rounded-2xl shadow-md" />
+                <header class='flex flex-col text-white mt-3 md:mt-0 md:ml-12 h-[32rem] md:pb-12 md:justify-end md:items-start'>
+                    <h1 class="font-bold truncate h-16 text-5xl w-full">
+                        {playbackData?.data.item.name}
+                    </h1>
+                    <p class="text-xl text-white/80">
                         {playbackData?.data.item.artists[0].name} &middot; {playbackData?.data.item.album.name}
                     </p>
                 </header>
@@ -263,7 +274,7 @@ e, Spotify Shuffle Fix, Spotify Shuffle Broken, Spotify Shuffle Broken Fix, Spot
             </div>
         </main>
     {:else if playbackData?.data.is_playing === false}
-    <main class="w-full h-full z-10 flex items-center justify-end pt-24 px-24 flex-col">
+    <main class="w-full h-full z-10 flex items-center justify-end pt-24 px-4 lg:px-24 flex-col">
         <div class="flex items-center justify-start w-full flex-row">
             <header class='flex flex-col text-white h-[32rem] pb-12 justify-end items-start'>
                 <h1 class="font-bold text-6xl w-full">
