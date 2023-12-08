@@ -202,7 +202,9 @@ e, Spotify Shuffle Fix, Spotify Shuffle Broken, Spotify Shuffle Broken Fix, Spot
 
 <main class="bg-zinc-950 w-screen h-screen flex items-center justify-center">
     {#if access_token && playbackData && playbackData?.data.is_playing}
-        <img src={playbackData?.data.item.album.images[0].url} class="w-screen h-screen blur-lg opacity-20 object-cover absolute z-0 shadow-md" />
+        <img on:click={() => {
+            goto(`https://open.spotify.com/track/${playbackData?.data.item.id}`);
+        }} src={playbackData?.data.item.album.images[0].url} class="w-screen h-screen blur-lg opacity-20 object-cover absolute z-0 shadow-md" />
         <nav class="top-8 left-8 absolute rounded-2xl flex flex-row items-center justify-center gap-2">
             <img src={userData?.images[0].url} alt="Profile picture" class="w-10 h-10 rounded-full shadow-md" />
             <p class='text-white font-semibold'>
