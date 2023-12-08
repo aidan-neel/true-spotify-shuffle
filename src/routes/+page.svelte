@@ -163,6 +163,21 @@
     }
 </script>
 
+<svelte:head>
+    <title>
+        True Shuffle for Spotify
+    </title>
+    <meta name="description" content="Shuffle your Spotify playlists properly" />
+    <meta name="keywords" content="Spotify, Shuffle, True Shuffle, Shuffle Spotify, Spotify Shuffle, Spotify True Shuffle, True Shuffle for Spotify, Spotify True Shuffl
+e, Spotify Shuffle Fix, Spotify Shuffle Broken, Spotify Shuffle Broken Fix, Spotify Shuffle Broken Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle
+    Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed,
+    Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotif
+    >" />
+
+    <meta property="og:title" content="True Shuffle for Spotify" />
+    <meta property="og:description" content="Shuffle your Spotify playlists properly" />
+</svelte:head>
+
 <style>
     .fadeUp {
         animation: fadeUp 0.4s ease-in-out;
