@@ -7,7 +7,7 @@
     import '../app.pcss';
 
     const CLIENT_ID = "5f68cc8f5281480d920786c9f5c5b680"; // Replace with your Spotify Client ID
-    const REDIRECT_URI = "http://localhost:5173/authorize" //"https://shuffle.aidan-neel.com/authorize"; // Replace with your redirect URI
+    const REDIRECT_URI = "https://shuffle.aidan-neel.com/authorize"; // Replace with your redirect URI
     const scope = 'playlist-read-private playlist-read-collaborative user-read-playback-state user-modify-playback-state user-read-currently-playing user-library-read user-read-playback-position';
 
     let isOn = false;
@@ -195,6 +195,9 @@ e, Spotify Shuffle Fix, Spotify Shuffle Broken, Spotify Shuffle Broken Fix, Spot
     Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotify Shuffle Fixed, Spotif
     >" />
 
+    <meta property="og:url" content="https://shuffle.aidan-neel.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://shuffle.aidan-neel.com/og-image.png" />
     <meta property="og:title" content="True Shuffle for Spotify" />
     <meta property="og:description" content="Shuffle your Spotify playlists properly" />
 </svelte:head>
