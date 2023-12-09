@@ -197,9 +197,9 @@ e, Spotify Shuffle Fix, Spotify Shuffle Broken, Spotify Shuffle Broken Fix, Spot
 
     <meta property="og:url" content="https://shuffle.aidan-neel.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://shuffle.aidan-neel.com/og-image.png" />
+    <meta property="og:image" content="https://media.discordapp.net/attachments/1139174900590968862/1183187080625528843/Untitled-2.png?ex=65876bd6&is=6574f6d6&hm=7bdf7a453bc3cc5569908c054f2c7fac4ad6ac7624ac351e13c1978028601111&=&format=webp&quality=lossless&width=1537&height=905" />
     <meta property="og:title" content="True Shuffle for Spotify" />
-    <meta property="og:description" content="Shuffle your Spotify playlists properly" />
+    <meta property="og:description" content="Shuffle your Spotify playlists properly with no bias or repeats. Currently waiting for Spotify's approval to be published." />
 </svelte:head>
 
 <style>
