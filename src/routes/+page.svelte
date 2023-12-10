@@ -104,7 +104,8 @@
         currentQueueIndex = 0;
 
         const context = playbackData?.data.context;
-        if (context && context.type === 'playlist' && shuffling) {
+        console.log(shuffling)
+        if (context && context.type === 'playlist' && shuffling === true) {
             const playlistId = context.uri.split(':')[2];
             const playlistData = await fetchData(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`);
             const playlistLength = playlistData.items.length;
@@ -181,7 +182,7 @@
         goto(url);
     }
 
-    let showingmessage = false;
+    let showingmessage = true;
 </script>
 
 <svelte:head>
